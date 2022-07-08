@@ -46,8 +46,8 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
     grid-template-areas: 
     "profile-info . . ."
     "profile-info . . .";
