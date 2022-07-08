@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Rubik", serif;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: hsl(226deg, 43%, 10%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 250px 250px;
+  grid-template-areas: "profile-info . . ." "profile-info . . .";
+  gap: 20px;
+  align-items: stretch;
+}
+
+.profile {
+  grid-area: profile-info;
+}/*# sourceMappingURL=style.css.map */
