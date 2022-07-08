@@ -84,6 +84,34 @@ main {
   font-weight: lighter;
 }
 
+.buttons {
+  height: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  color: #fff;
+}
+
+.change-duration {
+  color: hsl(235deg, 45%, 61%);
+  font-size: 1rem;
+  display: block;
+}
+.change-duration:hover,
+.change-duration:active {
+  color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
 .work {
   background-color: hsl(15deg, 100%, 70%);
 }
@@ -119,7 +147,8 @@ main {
   display: flex;
   justify-content: center;
 }
-.content:hover {
+.content:hover,
+.content:active {
   background-color: hsl(238deg, 28%, 36%);
 }
 
@@ -139,4 +168,98 @@ main {
   font-size: 3.125rem;
   padding-block: 10px;
   font-weight: 300;
+}
+
+.details {
+  display: block;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    height: 180px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(2, 180px);
+    gap: 10px;
+  }
+
+  .activity {
+    font-size: 1.25rem;
+  }
+
+  .hours {
+    font-size: 1.875rem;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    align-items: flex-start;
+  }
+
+  .grid-container {
+    display: block;
+    width: 500px;
+    padding: 13px;
+  }
+
+  .grid-item {
+    height: 200px;
+    margin: 30px 0;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .profile {
+    height: 230px;
+  }
+
+  .user-profile {
+    height: 160px;
+  }
+
+  .profile-picture {
+    float: left;
+    width: 25%;
+    border: 3px solid #fff;
+    margin: 0;
+    height: auto;
+  }
+
+  .report,
+.profile-name {
+    margin: 5px 0 0 30%;
+  }
+
+  .profile,
+.user-profile,
+.content {
+    border-radius: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-title {
+    padding: 30px 0 10px 0;
+  }
+
+  .activity {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
