@@ -24,8 +24,8 @@ fetch("./data.json")
     const previous = document.getElementsByClassName("previous-hours");
 
     for (let i = 0; i < 6; i++) {
-      current[i].innerHTML = `${dailyCurrent[i]} hrs`;
-      previous[i].innerHTML = `Yesterday - ${dailyPrevious[i]} hrs`;
+      current[i].innerHTML = `${dailyCurrent[i]}hrs`;
+      previous[i].innerHTML = `Yesterday - ${dailyPrevious[i]}hrs`;
     }
   });
 
@@ -64,8 +64,8 @@ function changeDuration(duration) {
         }
 
         for (let i = 0; i < 6; i++) {
-          hours[i].innerHTML = `${current[i]} hrs`;
-          previousHours[i].innerHTML = `${range} - ${previous[i]} hrs`;
+          hours[i].innerHTML = `${current[i]}hrs`;
+          previousHours[i].innerHTML = `${range} - ${previous[i]}hrs`;
         }
       }
     });

@@ -106,9 +106,8 @@ input[type=radio]:checked + label {
   font-size: 1rem;
   display: block;
 }
-.change-duration:hover,
-.change-duration:active {
-  color: rgb(192, 192, 192);
+.change-duration:hover {
+  color: rbg(192, 192, 192);
   cursor: pointer;
 }
 
@@ -147,8 +146,7 @@ input[type=radio]:checked + label {
   display: flex;
   justify-content: center;
 }
-.content:hover,
-.content:active {
+.content:hover {
   background-color: hsl(238deg, 28%, 36%);
 }
 
@@ -168,6 +166,10 @@ input[type=radio]:checked + label {
   font-size: 3.125rem;
   padding-block: 10px;
   font-weight: 300;
+}
+
+.previous-hours {
+  color: hsl(236deg, 100%, 87%);
 }
 
 .details {
@@ -193,6 +195,10 @@ input[type=radio]:checked + label {
     font-size: 1.875rem;
     padding-top: 5px;
   }
+
+  .previous-hours {
+    font-size: 0.9375rem;
+  }
 }
 @media screen and (max-width: 768px) {
   main {
@@ -202,7 +208,7 @@ input[type=radio]:checked + label {
   .grid-container {
     display: block;
     width: 500px;
-    padding: 13px;
+    padding-inline: 13px;
   }
 
   .grid-item {
@@ -261,5 +267,13 @@ input[type=radio]:checked + label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .hours {
+    font-size: 2.25rem;
+  }
+
+  .previous-hours {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
