@@ -6,7 +6,7 @@ let monthlyCurrent = [];
 let monthlyPrevious = [];
 
 // Getting data from json
-fetch("./data.json")
+fetch("./data file/data.json")
   .then((response) => response.json())
   .then((jsonData) => {
     jsonData.forEach((e) => {

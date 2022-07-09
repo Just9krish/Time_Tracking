@@ -187,6 +187,10 @@ input[type=radio]:checked + label {
     gap: 10px;
   }
 
+  .buttons {
+    padding-block: 20px;
+  }
+
   .activity {
     font-size: 1.25rem;
   }
